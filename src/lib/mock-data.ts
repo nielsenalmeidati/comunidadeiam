@@ -1,0 +1,71 @@
+export const courses = [
+  {
+    id: "1",
+    slug: "bootcamp-mental",
+    title: "Bootcamp Mental",
+    description: "Desenvolva a mentalidade certa para empreender com sucesso. Supere o medo, a síndrome do impostor e construa bases sólidas.",
+    thumbnail: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80",
+    totalLessons: 11,
+    completedLessons: 3,
+    category: "Mindset",
+    duration: "4h 30min",
+    published: true,
+    lessons: [
+      { id: "l1", title: "Introdução", duration: "4:44", completed: true, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "l2", title: "Debug da síndrome do impostor", duration: "13:58", completed: true, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "l3", title: "Blindando-se contra o medo", duration: "8:47", completed: true, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "l4", title: "Mentalidade Empreendedora", duration: "4:12", completed: false, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "l5", title: "Foco e produtividade", duration: "9:30", completed: false, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "l6", title: "Gestão do tempo", duration: "11:20", completed: false, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    ],
+  },
+  {
+    id: "2",
+    slug: "financas",
+    title: "Finanças",
+    description: "Aprenda a gerenciar seu dinheiro, criar reservas, investir e construir patrimônio mesmo começando do zero.",
+    thumbnail: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80",
+    totalLessons: 8,
+    completedLessons: 0,
+    category: "Finanças",
+    duration: "3h 15min",
+    published: true,
+    lessons: [
+      { id: "l7", title: "Introdução às finanças", duration: "6:00", completed: false, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: "l8", title: "Controle de gastos", duration: "10:00", completed: false, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    ],
+  },
+  {
+    id: "3",
+    slug: "seu-negocio",
+    title: "Seu Negócio",
+    description: "Monte, estruture e escale o seu negócio do zero. Do modelo de negócio à primeira venda.",
+    thumbnail: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80",
+    totalLessons: 12,
+    completedLessons: 0,
+    category: "Negócios",
+    duration: "6h 00min",
+    published: true,
+    lessons: [
+      { id: "l9", title: "Modelo de negócio", duration: "8:00", completed: false, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    ],
+  },
+  {
+    id: "4",
+    slug: "venda",
+    title: "Venda",
+    description: "Técnicas e estratégias de vendas para vender mais, melhor e com consistência.",
+    thumbnail: "https://images.unsplash.com/photo-1552581234-26160f608093?w=600&q=80",
+    totalLessons: 9,
+    completedLessons: 0,
+    category: "Vendas",
+    duration: "4h 45min",
+    published: true,
+    lessons: [
+      { id: "l10", title: "Introdução às vendas", duration: "7:00", completed: false, videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    ],
+  },
+];
+
+export type Course = typeof courses[0];
+export type Lesson = typeof courses[0]["lessons"][0];
