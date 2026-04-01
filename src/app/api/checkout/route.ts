@@ -16,6 +16,10 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid plan" }, { status: 400 });
     }
 
+    if (!stripe) {
+      return NextResponse.json({ error: "Stripe not configured" }, { status: 500 });
+    }
+
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
       payment_method_types: ["card"],
